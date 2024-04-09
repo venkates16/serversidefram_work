@@ -106,7 +106,7 @@ app.put('/players/:playerId', async (request, response) => {
 app.delete('/players/:playerId', async (request, response) => {
   let {playerId} = request.params
   let query_delete = `
-  DELETE 
+  DELETE FROM
   cricket_team 
   WHERE 
   player_id =${playerId}`
